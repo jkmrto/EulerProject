@@ -1,15 +1,14 @@
 import Funciones as fun
 
-print(sum([x for x in range(1000) if x%3 == 0 or x%5 == 0]))
-
-v = list(range(1, 1000, 1))
-print(v)
+lista = list(range(1, 1000, 1))
 
 
-def is_divisible(num, div):
-    return num % div == 0
+def filtering(number, numbers):
+    for i in numbers:
+        if fun.is_div(number, i):
+            return True
+    return False
 
+multiples = [l for l in lista if filtering(l, [3, 5])]
 
-
-print(T)
-
+print(sum(multiples))

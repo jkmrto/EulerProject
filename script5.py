@@ -1,10 +1,8 @@
 import Funciones as fun
 
-
-
 final = 10
 
-factores = list(range(1,final+1))
+factores = list(range(1, final+1))
 estado = [1] * final
 
 #fun.imprime(factores)

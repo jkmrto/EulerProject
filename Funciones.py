@@ -4,12 +4,17 @@ def imprime(vector):
    return
 
 
-def is_divisible(num, div):
-    return num % div == 0
+def is_div_list(list_num, div):
+    "Given a list of number, this functions gives back the function" \
+    "of numbers which are divisibles between div"
+    return [i for i in list_num if i % div == 0]
 
 
-#Esta funcion se podria mejorar, el inicio de deteccion de los
-#factores podria ser dinamico
+def is_div(num, div):
+    return 0 == num % div
+
+def next_prime_factor():
+    pass
 
 def factores_primos(siguiente):
 
@@ -70,19 +75,26 @@ def factores_primos(siguiente):
 #
 #     return [resultado]
 
-def get_count(v):
+# def get_count(v):
+#
+#     resultado = []
+#
+#     for i in range (0, len(v), 1):
+#         encontrado = 0
+#         for i in range(0, len(resultado,1))
+#             encontrado = 1
+#             resultado.append([1,1]):
+#             break
+#
+#         if(encontrado == 1):
+#
+#         else
+#
+#     return resultado
 
-    resultado = []
 
-    for i in range (0, len(v), 1):
-        encontrado = 0
-        for i in range(0, len(resultado,1))
-            encontrado = 1
-            resultado.append([1,1]):
-            break
-
-        if(encontrado == 1):
-
-        else
-
-    return resultado
+#def is_(list_num, div_list):
+#    for i in div_list:
+#        list_num = is_div(list_num, i)
+#
+#    return list_num
